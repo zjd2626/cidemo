@@ -5,7 +5,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 http://maven.apache.org/maven-v4_0_0.xsd">
  <modelVersion>4.0.0</modelVersion>
   <groupId>com.cloud.cidemo</groupId>
-  <artifactId>helloword</artifactId>
+  <artifactId>helloworld</artifactId>
   <version>0.0.1</version>
   <name>maven helloword project</name>
   <properties>
@@ -35,7 +35,7 @@ http://maven.apache.org/maven-v4_0_0.xsd">
             <configuration>
               <transformers>
                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                  <mainClass>com.cloud.cidemo.HelloWord</mainClass>
+                  <mainClass>com.cloud.cidemo.helloworld.HelloWorld</mainClass>
                 </transformer>
               </transformers>
             </configuration>
