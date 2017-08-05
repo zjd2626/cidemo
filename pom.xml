@@ -4,9 +4,9 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
 http://maven.apache.org/maven-v4_0_0.xsd">
  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.zlcook.studymvn</groupId>
+  <groupId>com.cloud.cidemo</groupId>
   <artifactId>helloword</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.1</version>
   <name>maven helloword project</name>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -21,7 +21,7 @@ http://maven.apache.org/maven-v4_0_0.xsd">
 </dependencies>
 <build>
     <plugins>
-    <!--ÅäÖÃ²å¼þ½«main·½·¨µÄÀàÐÅÏ¢Ìí¼Óµ½manifestÖÐ£¬´Ó¶ø¿ÉÒÔÍ¨¹ýÃüÁî[java -jar ¼Ü°ü.jar]À´Ö´ÐÐÉú³ÉµÄjar°ü-->
+    <!--é…ç½®æ’ä»¶å°†mainæ–¹æ³•çš„ç±»ä¿¡æ¯æ·»åŠ åˆ°manifestä¸­ï¼Œä»Žè€Œå¯ä»¥é€šè¿‡å‘½ä»¤[java -jar åŒ…å.jar]æ¥æ‰§è¡Œç”Ÿæˆçš„jaråŒ…-->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-shade-plugin</artifactId>
@@ -35,7 +35,7 @@ http://maven.apache.org/maven-v4_0_0.xsd">
             <configuration>
               <transformers>
                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                  <mainClass>com.zlcook.studymvn.helloword.HelloWord</mainClass>
+                  <mainClass>com.cloud.cidemo.HelloWord</mainClass>
                 </transformer>
               </transformers>
             </configuration>
@@ -44,7 +44,8 @@ http://maven.apache.org/maven-v4_0_0.xsd">
       </plugin>
     </plugins>
   </build>
-  <!--ÅäÖÃÏîÄ¿Éú³ÉµÄ¹¹¼þ²¿Êðµ½NexusË½·þÉÏ -->
+
+  <!--é…ç½®é¡¹ç›®ç”Ÿæˆçš„æž„å»ºéƒ¨ç½²åˆ°Nexusç§æœä¸Š-->
   <distributionManagement>
   	<repository>
 		<id>nexus-releases</id>
